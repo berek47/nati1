@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+.allcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    // width: 120px;
+    // border: solid 2px red;
+
+
+    .menu{
+        .item{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .title{
+            font-size: 12px;
+            font-weight: 200;
+            color: $dark-color;
+        }
+    
+        .listItem{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+    
+            &:hover{
+                background-color: $soft-bg;
+            }
+    
+        }
+    }
+    .profilepic{
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 200;
+        gap: 10px;
+        padding: 10px;
+        cursor: pointer;
+        img{
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            
+        }
+        .profile1{
+            font-size: 16px;
+            font-weight: 200;
+            color: $dark-color;
+        }
+    }
+    .menuContainer{
+        height: 80vh;
+        width: 175px;
+        border: solid 2px red;
+    }
+}

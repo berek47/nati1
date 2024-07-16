@@ -1,0 +1,70 @@
+@import "../../styles/variables.scss";
+.stack1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .messageSidebar{
+        display:flex;
+        flex-direction:column ;
+        position: relative;
+        max-height: 100vh;
+        width: 20%;
+        background-color: $soft-color;
+        box-shadow: "0px 0px 2px rgba(0, 0, 0, 0.25)";
+        margin: 3px;
+        .bothcontainer{
+            display:flex;
+            flex-direction:column ;
+            height: 84vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    
+    
+        .header{
+            display: flex;
+            margin: 15px;
+            flex-direction: row;
+            padding: 10px;
+            align-items: center;
+            justify-content: space-between;
+            max-height: 5%;
+            width: 90% ;
+            .icon{
+                font-size: 25px;
+                align-items: center;
+            }
+            h1{
+                font-size: 30px;
+            }
+        }
+        .head{
+            color: #38383b;
+            font-size: 17px;
+            margin-left: 16px;
+            margin-top: 16px;
+            font-weight: bold;
+        }
+    
+        .stack2{
+            flex-grow: 1;
+            height: 100%;
+        }
+        .css-ozancl{
+            overflow-x: hidden;
+        }
+        .contentContainer{
+            .messageSidebar{
+                overflow: hidden;
+            }
+        }
+    }
+    .box1{
+        height: 100vh;
+        width: 100%;
+        background-color: $soft-bg;
+    }
+    
+
+}
+

@@ -1,0 +1,66 @@
+.destinations {
+    .box_8{
+        background-color: #E4E4E7;
+        margin-bottom: 30px;
+        // border: solid red;
+    }
+    .timeline {
+      list-style: none;
+      padding: 0;
+      position: relative;
+      margin: 0;
+      h4{
+        color: #bdbdc2;
+      }
+      p{
+        font-weight: bold;
+      }
+    }
+    
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #c1c1c2;
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #6363fa;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px #ddd;
+    }
+    
+    .timeline-content {
+      margin-left: 40px;
+      padding: 10px;
+      background: #E4E4E7;
+      border-radius: 4px;
+    }
+    
+    .timeline-content h4 {
+      margin: 0 0 5px;
+    }
+    
+    .timeline-content p {
+      margin: 0;
+    }
+  }
+  
